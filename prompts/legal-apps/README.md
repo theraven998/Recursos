@@ -1,4 +1,4 @@
-# Prompt LEGAL para apps
+# Prompt de privacidad y términos para apps
 
 📄 **El prompt:** [`PROMPT.md`](PROMPT.md)
 

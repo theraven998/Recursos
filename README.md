@@ -7,7 +7,7 @@ Todo lo que menciono en los videos queda aquí, listo para copiar y usar.
 
 | Recurso | Para qué sirve | Video |
 |---|---|---|
-| [LEGAL para apps](prompts/legal-apps/) | Con Claude Code genera la política de privacidad, los términos y la página de eliminación de cuenta que piden Google Play y App Store, y la web donde se publican | Semana 6 |
+| [Privacidad y términos para apps](prompts/legal-apps/) | Con Claude Code genera la política de privacidad, los términos y la página de eliminación de cuenta que piden Google Play y App Store, y la web donde se publican | Semana 6 |
 
 ## Scripts
 
