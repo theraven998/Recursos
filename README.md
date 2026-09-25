@@ -1,6 +1,6 @@
 # Recursos
 
-Prompts, scripts y herramientas que comparto con la comunidad de [@dev__alejo](https://www.instagram.com/dev__alejo/).
+Prompts, scripts y herramientas que comparto con la comunidad de [@dev__alejo](https://www.instagram.com/dev__alejo/) en Instagram y [@dev.alejon](https://www.tiktok.com/@dev.alejon) en TikTok.
 Todo lo que menciono en los videos queda aquí, listo para copiar y usar.
 
 ## Prompts
@@ -15,4 +15,4 @@ Próximamente.
 
 ---
 
-¿Te sirvió algo? Cuéntamelo en los comentarios del video o por DM en Instagram.
+¿Te sirvió algo? Cuéntamelo en los comentarios del video o por DM.

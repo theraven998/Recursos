@@ -24,6 +24,6 @@ Qué hace:
 
 ---
 
-Hecho por [@dev__alejo](https://www.instagram.com/dev__alejo/) · Serie *mejorando tu flujo como desarrollador hasta fin de año*, semana 6.
+Hecho por [@dev__alejo](https://www.instagram.com/dev__alejo/) (Instagram) · [@dev.alejon](https://www.tiktok.com/@dev.alejon) (TikTok) · Serie *mejorando tu flujo como desarrollador hasta fin de año*, semana 6.
 
 ← [Todos los recursos](../../README.md)
