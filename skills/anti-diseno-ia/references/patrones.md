@@ -1,6 +1,7 @@
-# Los 10 patrones que delatan a una IA
+# Los 20 patrones que delatan a una IA
 
-Cada patrón trae cómo detectarlo y con qué reemplazarlo.
+Cada patrón trae cómo detectarlo y con qué reemplazarlo. Del 1 al 10 son de estilo visual; del 11 al 20,
+de estructura y contenido de plantilla.
 
 **1. Degradado morado → azul ("AI purple"), a veces en el texto**
 - Detectar: `linear-gradient` / `bg-gradient-to-*` con `purple`, `violet`, `indigo`, `fuchsia` o
@@ -69,3 +70,66 @@ Cada patrón trae cómo detectarlo y con qué reemplazarlo.
   que respete `prefers-color-scheme`, con ambos temas definidos en tokens. Usa una rejilla real
   (12 columnas o asimétrica) y anchos distintos por sección. Quita las bolitas: si muestras
   código o comandos, que sea un bloque de código real y copiable.
+
+**11. Pastilla encima del título ("✨ Nuevo", "Powered by AI", "Presentamos X →")**
+- Detectar: un `span` o `div` con `rounded-full`, borde fino y texto pequeño justo antes del `h1`,
+  muchas veces con emoji, brillo o flecha.
+- En su lugar: quítala. Si de verdad hay una novedad, dila en el titular o en una línea de texto
+  normal con fecha y enlace a lo que cambió.
+
+**12. Fondo con rejilla de puntos o líneas y orbes de color borrosos detrás del hero**
+- Detectar: `bg-grid`, `radial-gradient` repetido como patrón, SVG de cuadrícula, `div` absolutos con
+  `blur-3xl` y `bg-purple-500/30` (o similar) detrás del título.
+- En su lugar: fondo del token de superficie. Si el hero necesita fuerza, que sea una captura real
+  del producto, una foto propia o tipografía grande con buen contraste.
+
+**13. Copy de relleno ("Seamless", "Revolutionize", "Empower", "Next-gen", "sin esfuerzo")**
+- Detectar: verbos y adjetivos vacíos: seamless, effortless, revolutionize, empower, elevate,
+  supercharge, next-gen, cutting-edge, game-changer, "potencia tu", "revoluciona", "lleva tu X al
+  siguiente nivel", "sin esfuerzo", "todo en un solo lugar".
+- En su lugar: frases con sujeto, acción y resultado medible ("Carga tu inventario desde Excel en 2
+  minutos"). Si no sabes el dato, márcalo [POR CONFIRMAR]; no lo inventes.
+
+**14. Testimonios inventados (avatar sonriente, 5 estrellas, "Sarah J., CEO de Acme")**
+- Detectar: arreglos de testimonios con nombres genéricos, `pravatar`, `randomuser`, `unsplash` de
+  caras, estrellas fijas en 5, cargos tipo "CEO", "Founder" sin empresa real.
+- En su lugar: testimonios reales con permiso (nombre, empresa y enlace), una captura de un mensaje
+  real, o nada. Una sección vacía es mejor que una falsa.
+
+**15. Franja de logos de "empresas que confían" y cifras redondas (10K+, 99.9 %, 24/7)**
+- Detectar: "Trusted by", "Empresas que confían en nosotros", logos de Acme, Google o Stripe en gris
+  sin relación real; contadores tipo `10K+`, `500+`, `99.9%`, `24/7`, `4.9/5`.
+- En su lugar: solo clientes y cifras verificables, con la fuente. Si aún no hay, muestra el producto
+  funcionando o un caso concreto.
+
+**16. Precios en 3 planes con el del medio "Más popular" resaltado**
+- Detectar: tres columnas de precio (Starter / Pro / Enterprise), la del centro más grande, con
+  borde de color o degradado y etiqueta "Most popular" / "Más popular"; checks verdes iguales.
+- En su lugar: los planes que el negocio tiene de verdad (aunque sea uno), con lo que cambia entre
+  ellos en una tabla comparativa. Destaca un plan solo si hay una razón real.
+
+**17. Animaciones en todo (fade-in al hacer scroll en cada sección, hover que agranda cada card)**
+- Detectar: `framer-motion` / `motion.div` con `initial={{ opacity: 0, y: 20 }}` en cada sección,
+  `AOS`, `animate-fade-in`, `hover:scale-105` en todas las cards, `transition-all` en todo.
+- En su lugar: movimiento solo donde explica algo (un cambio de estado, un paso de un flujo).
+  Respeta `prefers-reduced-motion`. El contenido se ve al cargar, sin esperar animaciones.
+
+**18. Botón principal con degradado y flechita ("Empieza gratis →") + secundario fantasma ("Saber más")**
+- Detectar: par de botones repetido en hero y cierre: uno con `bg-gradient-to-*` o glow y `→` /
+  `ArrowRight`, otro con borde y fondo transparente que dice "Learn more" / "Saber más".
+- En su lugar: un solo botón principal en color de marca plano con un verbo concreto de lo que pasa
+  al hacer clic ("Crear mi cuenta", "Ver la demo de 2 minutos"). El secundario solo si lleva a algo
+  distinto y útil.
+
+**19. Navbar flotante en forma de píldora con blur**
+- Detectar: `nav` con `fixed top-4 left-1/2 -translate-x-1/2 rounded-full backdrop-blur border`,
+  separado del borde de la página y centrado.
+- En su lugar: una barra de navegación anclada al borde, a lo ancho de la rejilla, con fondo sólido
+  o blur solo si pasa sobre contenido. Que sus enlaces lleven a páginas que existen.
+
+**20. Cierre de plantilla: banner "¿Listo para empezar?" + FAQ en acordeón + footer de 4 columnas con enlaces a `#`**
+- Detectar: sección final "Ready to get started?" / "¿Listo para empezar?" con el mismo par de
+  botones; FAQ genérica en acordeón; footer con columnas Producto / Empresa / Recursos / Legal cuyos
+  enlaces van a `#` o a páginas que no existen; "© 2024 Company, Inc.".
+- En su lugar: cierra con la siguiente acción concreta y datos de contacto reales. FAQ solo con
+  preguntas que la gente hace de verdad. Footer con los enlaces que existen; quita los `#`.

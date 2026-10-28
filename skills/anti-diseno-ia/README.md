@@ -1,6 +1,6 @@
 # Skill anti diseño de IA
 
-Skill de **Claude Code** que quita de tu proyecto web o app los **10 patrones de diseño que delatan que lo hizo una IA** y los reemplaza por decisiones con intención.
+Skill de **Claude Code** que quita de tu proyecto web o app los **20 patrones de diseño que delatan que lo hizo una IA** y los reemplaza por decisiones con intención.
 
 ## Instalar
 
@@ -17,21 +17,23 @@ Reinicia Claude Code para que la cargue.
 
 Abre Claude Code en la raíz de tu proyecto y escribe `/anti-diseno-ia` (o pídele "quita el look de IA de mi diseño").
 
-1. **Auditoría:** te muestra una tabla con los 10 patrones: si aparecen, dónde y qué tan graves son.
-2. **Elegir:** respondes qué quitar (`todos`, `1,3,7` o `todos menos 5`) y, si falta, personalidad de marca, color y dark mode. No toca nada antes.
+1. **Auditoría:** te muestra una tabla con los 20 patrones: si aparecen, dónde y qué tan graves son.
+2. **Elegir:** respondes qué quitar (`todos`, `1,3,14`, `1-10` o `todos menos 5`) y, si falta, personalidad de marca, color y dark mode. No toca nada antes.
 3. **Corregir:** aplica solo lo elegido, centralizado en tokens (color, tipografía, radios, espaciado), sin romper funcionalidad y sin commits ni deploy sin tu confirmación.
 4. **Resumen:** qué cambió por patrón, qué quedó y por qué, y qué capturas tomar antes y después.
 
-En un **proyecto nuevo** sin código, usa los 10 patrones como prohibiciones al generar la interfaz.
+En un **proyecto nuevo** sin código, usa los 20 patrones como prohibiciones al generar la interfaz.
 
 ## Qué incluye
 
 - `SKILL.md`: el flujo en fases.
-- `references/patrones.md`: los 10 patrones, cómo detectarlos y con qué reemplazarlos.
+- `references/patrones.md`: los 20 patrones, cómo detectarlos y con qué reemplazarlos.
 - `references/tokens.md`: estructura de tokens de ejemplo.
 - `scripts/auditar.sh`: conteo opcional de señales con `grep` para web, React Native, Android (Compose y XML), SwiftUI y Flutter, con los archivos donde más aparecen (solo lee, no modifica nada).
 
-## Los 10 patrones
+## Los 20 patrones
+
+Estilo visual:
 
 1. Degradado morado → azul ("AI purple"), a veces en el texto
 2. Inter, Roboto o fuente del sistema en todo, sin jerarquía ni identidad
@@ -44,9 +46,22 @@ En un **proyecto nuevo** sin código, usa los 10 patrones como prohibiciones al 
 9. Mismo `border-radius` enorme, mismo padding y misma sombra en todo
 10. Dark mode obligatorio + una sola columna larga sin grid; terminal falso de tres bolitas
 
+Estructura y contenido de plantilla:
+
+11. Pastilla encima del título ("✨ Nuevo", "Powered by AI")
+12. Rejilla de puntos y orbes de color borrosos detrás del hero
+13. Copy de relleno: "Seamless", "Revolutionize", "Empower", "sin esfuerzo"
+14. Testimonios inventados: avatar, 5 estrellas, "Sarah J., CEO"
+15. Logos de "empresas que confían" y cifras redondas (10K+, 99.9 %, 24/7)
+16. Precios en 3 planes con el del medio "Más popular"
+17. Animaciones en todo: fade-in al hacer scroll y hover que agranda cada card
+18. Botón con degradado y flechita ("Empieza gratis →") + secundario "Saber más"
+19. Navbar flotante en forma de píldora con blur
+20. Cierre de plantilla: "¿Listo para empezar?" + FAQ en acordeón + footer con enlaces a `#`
+
 ## Créditos
 
-La estructura de skill (SKILL.md + scripts) se inspira en [design-slop-skill](https://github.com/hahahahahahahahah6/design-slop-skill) (MIT, hao li). El contenido, los 10 patrones y el flujo son propios.
+La estructura de skill (SKILL.md + scripts) se inspira en [design-slop-skill](https://github.com/hahahahahahahahah6/design-slop-skill) (MIT, hao li). El contenido, los 20 patrones y el flujo son propios.
 
 ---
 

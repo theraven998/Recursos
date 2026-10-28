@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Cuenta señales de los 10 patrones. Solo lee; no modifica nada.
+# Cuenta señales de los 20 patrones. Solo lee; no modifica nada.
 # Sirve para web (CSS, Tailwind, JSX, Vue, Svelte, Astro), React Native, Android (Jetpack Compose y XML),
 # SwiftUI y Flutter.
 # Uso: bash auditar.sh [carpeta]   (por defecto, la carpeta actual)
@@ -60,6 +60,27 @@ c "9 mismo radio" \
   'rounded-(2xl|3xl|full)|shadow-(lg|xl|2xl)|border-radius: *(1[6-9]|[2-9][0-9])px|borderRadius: *(1[6-9]|[2-9][0-9])|RoundedCornerShape\((1[6-9]|[2-9][0-9])|CircleShape|cornerRadius[:(] *(1[6-9]|[2-9][0-9])|BorderRadius\.circular\((1[6-9]|[2-9][0-9])'
 c "10 oscuro/terminal" \
   'max-w-(2xl|3xl)|#ff5f56|#ffbd2e|#27c93f|bg-red-500.*bg-yellow-500|darkColorScheme|isSystemInDarkTheme|preferredColorScheme\(\.dark|ThemeMode\.dark|colorScheme: *.dark'
+
+c "11 pastilla título" \
+  'Powered by AI|Introducing|Presentamos|✨ *(New|Nuevo)|rounded-full[^"]*(border|px-3)[^"]*text-(xs|sm)'
+c "12 rejilla/orbes" \
+  'bg-grid|grid-pattern|dot-pattern|bg-dot|blur-3xl|blur-\[[0-9]{3}px\]|radial-gradient\(circle'
+c "13 copy de relleno" \
+  '[Ss]eamless|[Ee]ffortless|[Rr]evolutioni[sz]e|[Ee]mpower|[Ee]levate your|[Ss]upercharge|[Nn]ext-gen|[Cc]utting-edge|[Gg]ame-changer|[Pp]otencia tu|[Rr]evoluciona|sin esfuerzo|siguiente nivel|en un solo lugar'
+c "14 testimonios" \
+  '[Tt]estimonial|[Tt]estimonio|pravatar|randomuser|i\.pravatar|[Ss]arah|[Jj]ohn [Dd]oe|★★★★★|rating: *5|stars: *5'
+c "15 logos/cifras" \
+  '[Tt]rusted by|[Ee]mpresas que confían|[Aa]cme|10[Kk]\+|[0-9]+\+ (users|usuarios|clientes|customers)|99\.9 ?%|24/7|4\.9/5'
+c "16 3 planes" \
+  '[Mm]ost [Pp]opular|[Mm]ás popular|[Rr]ecomendado|[Ss]tarter|[Ee]nterprise|/mes|/month|[Pp]ricing'
+c "17 animación en todo" \
+  'framer-motion|motion\.(div|section)|whileInView|initial=\{\{ *opacity: *0|data-aos|animate-fade|hover:scale-1[0-9]{2}|transition-all|AnimatedVisibility|withAnimation|AnimatedContainer'
+c "18 botón degradado" \
+  'Get started|Empieza gratis|Comienza gratis|Start for free|Learn more|Saber más|ArrowRight|→'
+c "19 navbar píldora" \
+  'fixed[^"]*top-[0-9][^"]*rounded-full|rounded-full[^"]*backdrop-blur|left-1/2[^"]*-translate-x-1/2[^"]*top-'
+c "20 cierre plantilla" \
+  'Ready to get started|[Ll]isto para empezar|Frequently Asked|Preguntas frecuentes|[Aa]ccordion|href="#"|href=\{"#"\}|© 20[0-9]{2} Company'
 
 echo
 echo "Son indicios, no veredictos: un conteo alto puede ser intencional y uno en 0 no descarta el patrón."

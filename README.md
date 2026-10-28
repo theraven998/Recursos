@@ -13,7 +13,7 @@ Todo lo que menciono en los videos queda aquí, listo para copiar y usar.
 
 | Recurso | Para qué sirve | Video |
 |---|---|---|
-| [Anti diseño de IA](skills/anti-diseno-ia/) | Skill de Claude Code que detecta y quita de tu proyecto los 10 patrones de diseño que delatan que lo hizo una IA, con tokens en vez de parches | Semana 8 (palabra clave SKILL) |
+| [Anti diseño de IA](skills/anti-diseno-ia/) | Skill de Claude Code que detecta y quita de tu proyecto los 20 patrones de diseño que delatan que lo hizo una IA, con tokens en vez de parches | Semana 8 (palabra clave SKILL) |
 
 ## Scripts
 
