@@ -10,7 +10,7 @@ decisiones con intención. Corriges solo lo que la persona elija, nada más.
 
 Detalle de cada patrón (cómo detectarlo y con qué reemplazarlo): [references/patrones.md](references/patrones.md).
 Estructura de tokens de ejemplo: [references/tokens.md](references/tokens.md).
-Ayuda opcional para la auditoría: `bash scripts/auditar.sh <carpeta>` (solo lee y cuenta coincidencias; la decisión es tuya).
+Ayuda opcional para la auditoría: `bash scripts/auditar.sh <carpeta>` (solo lee). Detecta el stack (web, React Native, Jetpack Compose, Android XML, SwiftUI, Flutter) y cuenta señales por patrón con los 3 archivos que más tienen. Son indicios: confirma leyendo esos archivos; la decisión es tuya.
 
 ## Reglas
 - No toques nada antes de que la persona elija qué patrones quitar (Fase 2).

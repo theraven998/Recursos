@@ -29,7 +29,7 @@ En un **proyecto nuevo** sin código, usa los 10 patrones como prohibiciones al 
 - `SKILL.md`: el flujo en fases.
 - `references/patrones.md`: los 10 patrones, cómo detectarlos y con qué reemplazarlos.
 - `references/tokens.md`: estructura de tokens de ejemplo.
-- `scripts/auditar.sh`: conteo opcional de señales con `grep` (solo lee, no modifica nada).
+- `scripts/auditar.sh`: conteo opcional de señales con `grep` para web, React Native, Android (Compose y XML), SwiftUI y Flutter, con los archivos donde más aparecen (solo lee, no modifica nada).
 
 ## Los 10 patrones
 
