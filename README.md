@@ -8,7 +8,12 @@ Todo lo que menciono en los videos queda aquí, listo para copiar y usar.
 | Recurso | Para qué sirve | Video |
 |---|---|---|
 | [Privacidad y términos para apps](prompts/legal-apps/) | Con Claude Code genera la política de privacidad, los términos y la página de eliminación de cuenta que piden Google Play y App Store, y la web donde se publican | Semana 6 |
-| [Anti diseño de IA](prompts/anti-diseno-ia/) | Detecta y quita de tu proyecto los 10 patrones de diseño que delatan que lo hizo una IA (degradado morado, cards gemelas, glassmorphism, emojis como íconos…) y los reemplaza con tokens | Semana 8 |
+
+## Skills
+
+| Recurso | Para qué sirve | Video |
+|---|---|---|
+| [Anti diseño de IA](skills/anti-diseno-ia/) | Skill de Claude Code que detecta y quita de tu proyecto los 10 patrones de diseño que delatan que lo hizo una IA, con tokens en vez de parches | Semana 8 (palabra clave SKILL) |
 
 ## Scripts
 
