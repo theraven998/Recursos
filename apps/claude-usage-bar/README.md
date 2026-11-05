@@ -86,7 +86,7 @@ La URL queda como `https://uso.tu-dominio.example/uso`. Con cualquiera de las do
 
 ### 2.3 La app Android
 
-1. Instala el APK desde [Releases](https://github.com/theraven998/Recursos/releases/latest) (permite instalar apps de origen desconocido), o compílalo tú.
+1. Descarga e instala [claude-usage-bar.apk](https://github.com/theraven998/Recursos/raw/main/apps/claude-usage-bar/claude-usage-bar.apk) (permite instalar apps de origen desconocido), o compílalo tú.
 2. Abre la app. En **Ajustes** escribe:
    - **URL del endpoint:** `https://tu-endpoint.example.com/uso`
    - **Token:** `TU_TOKEN` (el del paso 2.1)
