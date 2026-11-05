@@ -1,0 +1,12 @@
+# ~/.config/systemd/user/claude-usage-bar.service
+# Activar:  systemctl --user daemon-reload && systemctl --user enable --now claude-usage-bar
+[Unit]
+Description=Claude Usage Bar - endpoint de uso
+
+[Service]
+# Ajusta la ruta a donde clonaste el recurso
+ExecStart=/usr/bin/python3 %h/claude-usage-bar/servidor/claude-usage-server.py
+Restart=on-failure
+
+[Install]
+WantedBy=default.target

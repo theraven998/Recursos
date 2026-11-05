@@ -15,6 +15,12 @@ Todo lo que menciono en los videos queda aquí, listo para copiar y usar.
 |---|---|---|
 | [Anti diseño de IA](skills/anti-diseno-ia/) | Skill de Claude Code que detecta y quita de tu proyecto los 20 patrones de diseño que delatan que lo hizo una IA, con tokens en vez de parches | Semana 8 (palabra clave SKILL) |
 
+## Apps
+
+| Recurso | Para qué sirve | Video |
+|---|---|---|
+| [Claude Usage Bar](apps/claude-usage-bar/) | Barra de Waybar y widget de Android que comparan cuánto de la semana ha pasado contra cuánto de tu límite semanal de Claude has gastado | Semana 8 (palabra clave BARRA) |
+
 ## Scripts
 
 Próximamente.

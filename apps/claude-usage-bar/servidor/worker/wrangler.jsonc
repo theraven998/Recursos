@@ -1,0 +1,11 @@
+{
+  "name": "claude-uso",
+  "main": "src/index.js",
+  "compatibility_date": "2026-10-01",
+  // Tu dominio en Cloudflare, p. ej. "uso.tu-dominio.example"
+  "routes": [{ "pattern": "uso.tu-dominio.example", "custom_domain": true }],
+  "vpc_services": [
+    // El id sale de crear el servicio VPC que apunta a tu túnel (ver README)
+    { "binding": "PC", "service_id": "ID_DE_TU_SERVICIO_VPC", "remote": true }
+  ]
+}

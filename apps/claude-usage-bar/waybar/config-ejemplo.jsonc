@@ -1,0 +1,14 @@
+// 1) Agrega "custom/claude-usage-bar" a la lista de módulos donde la quieras, por ejemplo:
+//      "modules-left": ["hyprland/workspaces", "custom/claude-usage-bar"],
+// 2) Pega este bloque dentro del objeto principal de ~/.config/waybar/config
+"custom/claude-usage-bar": {
+    // Ruta donde guardaste el script (ajústala)
+    "exec": "~/.local/bin/claude-usage-bar.py",
+    // Para fijar el reinicio a mano (opcional), por defecto usa la API:
+    // "exec": "env CLAUDE_BAR_RESET_DAY=4 CLAUDE_BAR_RESET_HOUR=12 ~/.local/bin/claude-usage-bar.py",
+    "interval": 60,
+    "return-type": "json",
+    "format": "{}",
+    "tooltip": true,
+    "on-click": "xdg-open https://claude.ai/settings/usage"
+}

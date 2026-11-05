@@ -1,0 +1,13 @@
+/* Pega esto en ~/.config/waybar/style.css (ajusta colores a tu tema). */
+#custom-claude-usage-bar {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 4px 15px;
+    margin: 0px 5px;
+    border-radius: 20px;
+    background: rgba(30, 30, 46, 0.85);
+}
+#custom-claude-usage-bar.ok       { color: #a6e3a1; } /* vas por debajo de la semana */
+#custom-claude-usage-bar.warning  { color: #f9e2af; } /* hasta 10 pts por encima */
+#custom-claude-usage-bar.critical { color: #f38ba8; } /* más de 10 pts por encima */
+#custom-claude-usage-bar.error    { color: #6c7086; } /* sin datos */
