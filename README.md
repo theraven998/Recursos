@@ -28,3 +28,7 @@ Próximamente.
 ---
 
 ¿Te sirvió algo? Cuéntamelo en los comentarios del video o por DM.
+
+## Licencia
+
+Todo el repositorio está bajo licencia [MIT](LICENSE): puedes usar, modificar y redistribuir los recursos manteniendo el aviso de copyright. Las mejoras son bienvenidas por pull request.

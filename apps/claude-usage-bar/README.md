@@ -109,4 +109,4 @@ Los builds de Android pesan en RAM: si tu PC es modesto, usa `--max-workers=2` o
 
 ## Licencias
 
-El código es de uso libre. La fuente Doto del widget (`android/app/src/main/res/font/`) es de sus autores bajo la licencia SIL Open Font License.
+El código está bajo licencia [MIT](../../LICENSE): puedes usarlo, modificarlo y redistribuirlo manteniendo el aviso de copyright. La fuente Doto del widget (`android/app/src/main/res/font/`) es de sus autores bajo la licencia SIL Open Font License.
